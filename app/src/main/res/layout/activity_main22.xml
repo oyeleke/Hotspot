@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ti.hostspotdemo.Main3Activity">
+
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/activity_my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:background="#c40303"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="65dp"
+            android:src="@drawable/toolbar_hotplaces"/>
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/activity_my_toolbar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:isScrollContainer="true">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/scrollView">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="62dp"
+                    android:onClick="onClickAtm">
+
+                    <ImageView
+                        android:layout_width="@android:dimen/notification_large_icon_width"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:src="@drawable/atm" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="@string/atms"
+                        android:id="@+id/textView"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/imageView"
+                        android:layout_toEndOf="@+id/imageView"
+                        android:paddingStart="20px"
+                        android:paddingEnd="20px"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="62dp"
+                    android:onClick="onBusClick">
+
+                    <ImageView
+                        android:layout_width="@android:dimen/notification_large_icon_width"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView1"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:src="@drawable/bus_station" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="@string/bus_stataion"
+                        android:id="@+id/textView1"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/imageView1"
+                        android:layout_toEndOf="@+id/imageView1"
+                        android:paddingStart="20px"
+                        android:paddingEnd="20px"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="62dp"
+                    android:onClick="onClickLodging">
+
+                    <ImageView
+                        android:layout_width="@android:dimen/notification_large_icon_width"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView2"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:src="@drawable/city_hall" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="@string/city_hall"
+                        android:id="@+id/textView2"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/imageView2"
+                        android:layout_toEndOf="@+id/imageView2"
+                        android:paddingStart="20px"
+                        android:paddingEnd="20px"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="62dp"
+                    android:onClick="onClickLodging">
+
+                    <ImageView
+                        android:layout_width="@android:dimen/notification_large_icon_width"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView3"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:src="@drawable/lodging" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="@string/lodging"
+                        android:id="@+id/textView3"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/imageView3"
+                        android:layout_toEndOf="@+id/imageView3"
+                        android:paddingStart="20px"
+                        android:paddingEnd="20px"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="62dp"
+                    android:onClick="onClickMuseum">
+
+                    <ImageView
+                        android:layout_width="@android:dimen/notification_large_icon_width"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView4"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:src="@drawable/museum" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="@string/museum"
+                        android:id="@+id/textView4"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/imageView4"
+                        android:layout_toEndOf="@+id/imageView4"
+                        android:paddingStart="20px"
+                        android:paddingEnd="20px"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="62dp"
+                    android:onClick="onClickPharmacy">
+
+                    <ImageView
+                        android:layout_width="@android:dimen/notification_large_icon_width"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView5"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:src="@drawable/pharmacy" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="@string/pharmacy"
+                        android:id="@+id/textView5"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/imageView5"
+                        android:layout_toEndOf="@+id/imageView5"
+                        android:paddingStart="20px"
+                        android:paddingEnd="20px"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="62dp"
+                    android:onClick="onClickPolice">
+
+                    <ImageView
+                        android:layout_width="@android:dimen/notification_large_icon_width"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView6"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:src="@drawable/police" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="@string/police"
+                        android:id="@+id/textView6"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/imageView6"
+                        android:layout_toEndOf="@+id/imageView6"
+                        android:paddingStart="20px"
+                        android:paddingEnd="20px"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="62dp"
+                    android:onClick="onClickRestaurant">
+
+                    <ImageView
+                        android:layout_width="@android:dimen/notification_large_icon_width"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView7"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:src="@drawable/restaurant" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="@string/resturant"
+                        android:id="@+id/textView7"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/imageView7"
+                        android:layout_toEndOf="@+id/imageView7"
+                        android:paddingStart="20px"
+                        android:paddingEnd="20px"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="62dp"
+                    android:onClick="onClickSchool">
+
+                    <ImageView
+                        android:layout_width="@android:dimen/notification_large_icon_width"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView8"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:src="@drawable/school" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="@string/Schools"
+                        android:id="@+id/textView8"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/imageView8"
+                        android:layout_toEndOf="@+id/imageView8"
+                        android:paddingStart="20px"
+                        android:paddingEnd="20px"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+
+</RelativeLayout>
+
